@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/1163/1163661.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex flex-col items-center w-full h-screen bg-gray-100 py-6">
+    <div class="w-full bg-slate-600 p-4">
+        <h1 class="text-white text-3xl text-center font-bold">My Weather</h1>
+    </div>
+    
+    <div class="flex items-center justify-center gap-2 w-full mt-4">
+        <input type="text" id="search" placeholder="Ex- NewYork, London" class="w-64 h-10 text-center border-2 border-black rounded-lg">
+        <button id="searchBtn" class="bg-transparent border-none w-10 h-10 flex items-center justify-center">
+            <img src="https://cdn-icons-png.flaticon.com/128/54/54481.png" class="w-6 h-6">
+        </button>
+        <h2 class="text-lg">OR</h2>
+        <button class="location bg-green-500 text-white text-lg h-10 px-4 rounded-md hover:bg-blue-700">Current Location</button>
+    </div>
+
+    <div class="weather w-96 h-52 border-2 border-black rounded-xl mt-6 flex flex-col justify-center px-4 gap-2 relative bg-white">
+        <h2 class="city text-lg font-semibold">City</h2>
+        <h2 class="temp text-lg">Temperature</h2>  
+        <h2 class="humid text-lg">Humidity</h2>  
+        <h2 class="wind text-lg">Wind</h2>  
+        <img src="https://cdn-icons-png.flaticon.com/128/5370/5370498.png" class="icon w-20 h-20 absolute right-4">
+    </div>
+
+    <div class="boxes flex justify-center items-center gap-4 mt-6">
+        <div class="box w-48 h-64 border-2 border-black rounded-lg flex flex-col justify-center items-center bg-beige"></div>
+        <div class="box w-48 h-64 border-2 border-black rounded-lg flex flex-col justify-center items-center bg-beige"></div>
+        <div class="box w-48 h-64 border-2 border-black rounded-lg flex flex-col justify-center items-center bg-beige"></div>
+        <div class="box w-48 h-64 border-2 border-black rounded-lg flex flex-col justify-center items-center bg-beige"></div>
+        <div class="box w-48 h-64 border-2 border-black rounded-lg flex flex-col justify-center items-center bg-beige"></div>      
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+@media (max-width: 768px) {
+    .weather {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .icon {
+        width: 60px;
+        height: 60px;
+        right: 10px;
+    }
+
+    .boxes {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .box {
+        width: 45%;
+        height: 220px;
+    }
+}
+
+@media (max-width: 375px) {
+    .weather {
+        width: 95%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .icon {
+        width: 50px;
+        height: 50px;
+        right: 5px;
+    }
+
+    .boxes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .box {
+        width: 90%;
+        height: 200px;
+    }
+
+    .location {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #search {
+        width: 80%;
+    }
+}
